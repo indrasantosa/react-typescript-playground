@@ -4,7 +4,7 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import { applyMiddleware, createStore } from 'redux';
 
 import AppReducer from './store';
-import Home from './containers/Home';
+import HomeScreen from './containers/Home';
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import reduxLogger from 'redux-logger';
@@ -27,7 +27,7 @@ class App extends React.Component {
       <Provider store={store}>
         <Router>
           <AppWrapper>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={HomeScreen} />
           </AppWrapper>
         </Router>
       </Provider>
