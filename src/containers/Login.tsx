@@ -4,13 +4,13 @@ import { AppState } from '../store';
 import { connect } from 'react-redux';
 import { getGlobalConfig } from '../store/config/actions';
 
-interface HomeScreenProps {
+interface LoginScreenProps {
   getGlobalConfig: typeof getGlobalConfig;
 }
 
-class HomeScreen extends React.Component<HomeScreenProps> {
+class LoginScreen extends React.Component<LoginScreenProps> {
   render() {
-    return <div>This is Home screen!</div>;
+    return <div>This is login screen!</div>;
   }
   componentDidMount() {
     this.props.getGlobalConfig();
@@ -24,4 +24,4 @@ const mapStateToProps = (state: AppState) => ({
 export default connect(
   mapStateToProps,
   { getGlobalConfig }
-)(HomeScreen);
+)(LoginScreen);
