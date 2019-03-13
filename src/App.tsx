@@ -1,15 +1,17 @@
 import * as React from 'react';
 
-import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 import { applyMiddleware, createStore } from 'redux';
 
-import AppReducer from './store';
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import loadable from '@loadable/component';
 import reduxLogger from 'redux-logger';
 import reduxThunk from 'redux-thunk';
 import styled from '@emotion/styled';
+
+import AppReducer from './store';
+import Navbar from './components/Navbar';
 
 const HomeScreen = loadable(() => import('./containers/Home'));
 const LoginScreen = loadable(() => import('./containers/Login'));
@@ -30,8 +32,7 @@ class App extends React.Component {
       <Provider store={store}>
         <Router>
           <AppWrapper>
-            <Link to={'/'}>Home</Link>
-            <Link to={'/login'}>Login</Link>
+            <Navbar />
             <Route exact path="/" component={HomeScreen} />
             <Route path="/login" component={LoginScreen} />
           </AppWrapper>
