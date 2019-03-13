@@ -123,6 +123,12 @@
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.2.tgz#63985d3d8b02530e0869962f4da09142ee8e200e"
 
+"@loadable/component@^5.6.1":
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/@loadable/component/-/component-5.6.1.tgz#7c4cc7619280ae39a770583e05c3e9980bb3a615"
+  dependencies:
+    hoist-non-react-statics "^3.3.0"
+
 "@types/debug@^4.1.2":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.2.tgz#84824e9259fc583dd9385635738359c9582f7f82"
@@ -150,6 +156,12 @@
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
+
+"@types/loadable__component@^5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@types/loadable__component/-/loadable__component-5.6.0.tgz#e8fac4ff03400b6cd1aef69a40dc66f06a72ac0d"
+  dependencies:
+    "@types/react" "*"
 
 "@types/node@^11.10.4":
   version "11.10.4"
